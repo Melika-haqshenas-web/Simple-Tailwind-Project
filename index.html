@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pato Restaurant</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="overflow-y-scroll h-[100vh] ">
+        <section id="Header" class="w-full h-[100vh] flex justify-center relative group">
+            <!-- slider -->
+            <section id="arrowRight"
+                class="w-[50px] h-[50px] md:w-[70px] md:h-[70px] bg-[#010101a8] z-40 rounded-full absolute right-2 md:right-10 top-1/2 text-[#ffffff9e] flex justify-center items-center text-xl cursor-pointer opacity-0 transition duration-500 group-hover:opacity-100 hover:bg-[#5b1315]">
+                <i class="bi bi-chevron-right"></i></section>
+            <section id="arrowLeft"
+                class="w-[50px] h-[50px] md:w-[70px] md:h-[70px] bg-[#010101a8] z-40 rounded-full absolute left-2 md:left-10 top-1/2 text-[#ffffff9e] flex justify-center items-center text-xl cursor-pointer opacity-0 transition duration-500 group-hover:opacity-100 hover:bg-[#5b1315]">
+                <i class="bi bi-chevron-left"></i></section>
+
+            <img src="img/Slider/slide1.jpg" alt=""
+                class="w-full h-full object-cover absolute top-0 left-0 transition duration-700 z-30">
+            <img src="img/Slider/slide2.jpg" alt=""
+                class="w-full h-full object-cover absolute top-0 left-0 transition duration-700 z-20">
+            <img src="img/Slider/slide3.jpg" alt=""
+                class="w-full h-full object-cover absolute top-0 left-0 transition duration-700 z-10">
+
+            <div
+                class="w-[65%] h-[65%] bg-transparent absolute top-[20%] flex flex-col justify-center items-center opacity-0 transition duration-700 z-40">
+                <h3 class="capitalize text-white text-6xl mb-3.5 text-center font-cour" >welcome to</h3>
+                <h2
+                    class="text-white font-bold text-6xl md:text-8xl uppercase tracking-[10px] [word-spacing:10px] mb-9 text-center font-pop">
+                    Pato place</h2>
+                <button
+                    class="bg-white text-[#ec1d25] pt-2 pb-2 pr-5 pl-5 rounded-lg transition duration-700 hover:bg-[#ec1d25] hover:text-white"><a
+                        href="" class="w-full h-full capitalize">look menu</a></button>
+            </div>
+            <div
+                class="w-[65%] h-[65%] bg-transparent absolute top-[20%] flex flex-col justify-center items-center opacity-0 transition duration-700 z-30">
+                <h3 class="capitalize text-white text-6xl mb-3.5 text-center font-cour">welcome to</h3>
+                <h2
+                    class="text-white font-bold text-6xl md:text-8xl uppercase tracking-[10px] [word-spacing:10px] mb-9 text-center font-pop">
+                    Pato place</h2>
+                <button
+                    class="bg-white text-[#ec1d25] pt-2 pb-2 pr-5 pl-5 rounded-lg transition duration-700 hover:bg-[#ec1d25] hover:text-white"><a
+                        href="" class="w-full h-full capitalize">look menu</a></button>
+            </div>
+            <div
+                class="w-[65%] h-[65%] bg-transparent absolute top-[20%] flex flex-col justify-center items-center opacity-0 transition duration-700 z-20">
+                <h3 class="capitalize text-white text-6xl mb-3.5 text-center font-cour">welcome to</h3>
+                <h2
+                    class="text-white font-bold text-6xl md:text-8xl uppercase tracking-[10px] [word-spacing:10px] mb-9 text-center font-pop">
+                    Pato place</h2>
+                <button
+                    class="bg-white text-[#ec1d25] pt-2 pb-2 pr-5 pl-5 rounded-lg transition duration-700 hover:bg-[#ec1d25] hover:text-white"><a
+                        href="" class="w-full h-full capitalize">look menu</a></button>
+            </div>
+
+            <section id="button" class="w-[30%] h-[10%] absolute bottom-5 z-40 flex justify-center items-center">
+                <div
+                    class="w-4 h-4 bg-[#ffffffab] rounded-full m-2 cursor-pointer transition duration-500 hover:bg-[#ec1d25] hover:border-4">
+                </div>
+                <div
+                    class="w-4 h-4 bg-[#ffffffab] rounded-full m-2 cursor-pointer transition duration-500 hover:bg-[#ec1d25] hover:border-4">
+                </div>
+                <div
+                    class="w-4 h-4 bg-[#ffffffab] rounded-full m-2 cursor-pointer transition duration-500 hover:bg-[#ec1d25] hover:border-4">
+                </div>
+            </section>
+            <!-- slider -->
+
+            <!-- menu -->
+            <header id="Menu" class="w-full h-[10%] flex transition duration-700 z-50">
+                <!-- left menu -->
+                <div id="logo" class="w-[50%] md:w-[20%] h-full flex items-center md:justify-center md:items-end">
+                    <a href="index.html" class="w-auto pl-3">
+                        <img id="img" src="https://preview.colorlib.com/theme/pato/images/icons/logo.png" alt=""
+                            class="w-full h-full object-cover bg-inherit">
+                    </a>
+                </div>
+                <!-- left menu -->
+
+                <!-- main menu -->
+                <div id="mainMenu" class="hidden md:flex w-[60%] h-full">
+                    <div class="grow h-full text-white flex justify-center items-center"><a href=""
+                            class="w-1/2 h-1/2 cursor-pointer flex justify-center items-end uppercase font-light tracking-wide text-sm transition duration-500 hover:text-[#ec1d25] font-mon">home</a>
+                    </div>
+                    <div class="grow h-full text-white flex justify-center items-center"><a href=""
+                            class="w-1/2 h-1/2 cursor-pointer flex justify-center items-end uppercase font-light tracking-wide text-sm transition duration-500 hover:text-[#ec1d25] font-mon">menu</a>
+                    </div>
+                    <div class="grow h-full text-white flex justify-center items-center"><a href=""
+                            class="w-1/2 h-1/2 cursor-pointer flex justify-center items-end uppercase font-light tracking-wide text-sm transition duration-500 hover:text-[#ec1d25] font-mon">reservation</a>
+                    </div>
+                    <div class="grow h-full text-white flex justify-center items-center"><a href=""
+                            class="w-1/2 h-1/2 cursor-pointer flex justify-center items-end uppercase font-light tracking-wide text-sm transition duration-500 hover:text-[#ec1d25] font-mon">gallery</a>
+                    </div>
+                    <div class="grow h-full text-white flex justify-center items-center"><a href=""
+                            class="w-1/2 h-1/2 cursor-pointer flex justify-center items-end uppercase font-light tracking-wide text-sm transition duration-500 hover:text-[#ec1d25] font-mon">about</a>
+                    </div>
+                    <div class="grow h-full text-white flex justify-center items-center"><a href=""
+                            class="w-1/2 h-1/2 cursor-pointer flex justify-center items-end uppercase font-light tracking-wide text-sm transition duration-500 hover:text-[#ec1d25] font-mon">blog</a>
+                    </div>
+                    <div class="grow h-full text-white flex justify-center items-center"><a href=""
+                            class="w-1/2 h-1/2 cursor-pointer flex justify-center items-end uppercase font-light tracking-wide text-sm transition duration-500 hover:text-[#ec1d25] font-mon">contact</a>
+                    </div>
+
+                </div>
+                <!-- main menu -->
+
+                <!-- right menu -->
+                <div id="rightMenu"
+                    class="w-[50%] md:w-[20%] h-full flex items-center justify-end md:justify-center md:pt-6">
+                    <i
+                        class="bi bi-facebook text-white m-2 text-sm transition duration-500 cursor-pointer hover:text-[#ec1d25] hover:text-xs"></i>
+                    <i
+                        class="bi bi-twitter text-white m-2 text-sm transition duration-500 cursor-pointer hover:text-[#ec1d25] hover:text-xs"></i>
+                    <i
+                        class="bi bi-list text-white m-3 text-3xl transition duration-500 hover:text-[#ec1d25] cursor-pointer"></i>
+                </div>
+                <!-- right menu -->
+            </header>
+            <!-- menu -->
+
+        </section>
+
+        <section id="wel" class="w-full h-[150vh] md:h-[90vh] md:flex bg-[url('img/back.png')] bg-cover">
+            <div class="w-full h-1/2 md:h-full flex items-center justify-center flex-col">
+                <h2 class="capitalize text-[#d61c22] text-3xl pb-4 font-cour">italian restaurant</h2>
+                <h2 class="uppercase text-[50px] font-bold leading-tight tracking-[6px] mb-9 mt-1.5 font-pop text-[#222222]">
+                    welcome</h2>
+                <p
+                    class="w-[70%] text-[15px] leading-relaxed font-normal text-[#666666] text-center mb-6 font-mon">
+                    Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet
+                    lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
+                <a href=""
+                    class="group hover:text-[#ec1d25] text-[12px] text-[#222222] font-normal uppercase tracking-[1px] font-mon">our
+                    story <i
+                        class="bi bi-arrow-right text-[#222222] text-[12px] ml-2.5 group-hover:text-[#ec1d25]"></i></a>
+            </div>
+            <div class="w-full h-1/2 md:h-full flex justify-center items-start md:items-center">
+                <div class="w-[80%] h-[90%] md:w-[50%] md:h-[70%] overflow-hidden rounded-lg">
+                    <img src="img/small/story-01.jpg" alt=""
+                        class="w-full h-full object-cover transition duration-700 hover:scale-110 rounded-lg">
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="w-full h-[60vh] bg-[url('img/bg-300vh.jpg')] bg-fixed bg-top flex flex-col justify-center items-center">
+            <h3 class="capitalize text-[#d61c22] text-3xl font-cour">Discover</h3>
+            <h2
+                class="uppercase text-[50px] font-bold leading-tight text-white tracking-[10px] [word-spacing:6px] pt-1 font-mon text-center">
+                PATO PLACE</h2>
+        </section>
+
+        <section class="w-full h-auto md:h-[80%] flex flex-wrap md:flex-nowrap md:justify-center">
+            <div
+                class="w-full h-1/3 md:w-[28%] md:h-full flex flex-col items-center pt-16 pl-1 pr-1 pb-4 overflow-hidden">
+                <div class="w-[95%] h-[50%] rounded-lg overflow-hidden">
+                    <img src="img/3first/01.jpg" alt=""
+                        class="w-full h-full object-cover rounded-lg hover:scale-105 cursor-pointer transition duration-500">
+                </div>
+                <h2
+                    class="w-full text-[#333333] text-start font-medium text-2xl uppercase tracking-[3px] hover:text-[#ec1d25] mb-3.5 pt-4 pl-3 font-pop">
+                    <a href="" class="font-pop">Romantic restaurant</a></h2>
+                <p class="w-full text-start font-normal text-base text-[#666666] mb-5 pl-3 font-mon">
+                    Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+                <a class="group w-full text-start text-[#222222] uppercase font-normal tracking-[1px] hover:text-[#ec1d25] text-xs pl-3 font-mon"
+                    href="">Learn More <i
+                        class="bi bi-arrow-right ml-2.5 text-[#222222] text-[12px] group-hover:text-[#ec1d25] font-mon"></i></a>
+            </div>
+            <div class="w-full h-1/3 md:w-[28%] md:h-full flex flex-col items-center pt-16 pl-1 pr-1 pb-4">
+                <div class="w-[95%] h-[50%] rounded-lg overflow-hidden">
+                    <img src="img/3first/02.jpg" alt=""
+                        class="w-full h-full object-cover rounded-lg hover:scale-105 cursor-pointer transition duration-500">
+                </div>
+                <h2
+                    class="w-full text-[#333333] text-start font-medium text-2xl uppercase tracking-[3px] hover:text-[#ec1d25] mb-3.5 pt-4 pl-3 font-pop">
+                    <a href="" class="font-pop">delicious food</a></h2>
+                <p class="w-full text-start font-normal text-base text-[#666666] mb-5 pl-3 font-mon">Aliquam
+                    eget aliquam magna, quis posuere risus ac justo ipsum nibh urna</p>
+                <a class="group w-full text-start text-[#222222] uppercase  font-normal tracking-[1px] hover:text-[#ec1d25] text-xs pl-3 font-mon"
+                    href="">Learn More <i
+                        class="bi bi-arrow-right ml-2.5 text-[#222222] text-[12px] group-hover:text-[#ec1d25] font-mon"></i></a>
+            </div>
+            <div class="w-full h-1/3 md:w-[28%] md:h-full flex flex-col items-center pt-16 pl-1 pr-1 pb-4">
+                <div class="w-[95%] h-[50%] rounded-lg overflow-hidden">
+                    <img src="img/3first/03.jpg" alt=""
+                        class="w-full h-full object-cover rounded-lg hover:scale-105 cursor-pointer transition duration-500">
+                </div>
+                <h2
+                    class="w-full text-[#333333] text-start font-medium text-2xl uppercase tracking-[3px] hover:text-[#ec1d25] mb-3.5 pt-4 pl-3 font-pop">
+                    <a href="" class="font-pop">Red wines you love</a></h2>
+                <p class="w-full text-start font-normal text-base text-[#666666] mb-5 pl-3 font-mon">Sed
+                    ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+                <a class="group w-full text-start text-[#222222] uppercase font-normal tracking-[1px] hover:text-[#ec1d25] text-xs pl-3 font-mon"
+                    href="">Learn More <i
+                        class="bi bi-arrow-right ml-2.5 text-[#222222] text-[12px] group-hover:text-[#ec1d25] font-mon"></i></a>
+            </div>
+        </section>
+
+        <section class="w-full h-auto md:h-[160vh] lg:h-[160vh] flex flex-col items-center">
+            <h3 class="text-3xl text-[#d61c22] font-cour">Discover</h3>
+            <h2
+                class="text-[#222222] text-5xl font-bold uppercase tracking-[10px] [word-spacing:8px] pb-5 font-pop text-center">
+                our menu</h2>
+            <div
+                class="w-full h-full md:w-[80%] md:h-[85%] grid-cols-1 grid grid-rows-[repeat(6,minmax(130px,130px))] gap-4 md:grid-cols-3 md:grid-row-[repeat(7,minmax(130px,130px))] text-white">
+                <div
+                    class="group row-start-1 row-span-4 md:row-start-1 md:row-span-4 md:col-start-1 overflow-hidden rounded-lg relative mx-4 md:mx-0">
+                    <img src="img/grid/meigo.jpg" alt=""
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-105 z-10 ">
+                    <button
+                        class="w-36 h-14 opacity-90 rounded-lg font-medium text-xl tracking-[3px] text-[#333333] uppercase bg-white transition duration-500 absolute top-[45%] left-[30%] md:left-[10%] lg:left-[30%] hover:text-white hover:bg-[#ec1d25]  z-40 font-pop">lunch</button>
+                </div>
+                <div
+                    class="group row-start-5 row-span-4 md:row-start-1 md:row-span-4 md:col-start-2 overflow-hidden rounded-lg relative mx-4 md:mx-0">
+                    <img src="img/grid/wine.jpg" alt=""
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-105 z-10 ">
+                    <button
+                        class="w-36 h-14 opacity-90 rounded-lg font-medium text-xl tracking-[3px] text-[#333333] uppercase bg-white transition duration-500 absolute top-[45%] left-[30%] md:left-[10%] lg:left-[30%] hover:text-white hover:bg-[#ec1d25]  z-40 font-pop">dinner</button>
+                </div>
+                <div
+                    class="group row-start-9 row-span-1 md:row-start-5 md:row-end-7 md:col-start-1 md:col-end-3 overflow-hidden rounded-lg relative mx-4 md:mx-0">
+                    <img src="img/grid/glass.jpg" alt=""
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-105 z-10 ">
+                    <button
+                        class="w-44 h-14 opacity-90 rounded-lg font-medium text-xl tracking-[3px] text-[#333333] uppercase bg-white transition duration-500 absolute top-[20%] left-[20%] md:top-[45%] md:left-[40%] hover:text-white hover:bg-[#ec1d25]  z-40 font-pop">happy
+                        hour</button>
+                </div>
+                <div class="group row-start-11 row-span-2 overflow-hidden rounded-lg relative mx-4 md:mx-0">
+                    <img src="img/grid/coffe.jpg" alt=""
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-105 z-10 ">
+                    <button
+                        class="w-44 h-14 opacity-90 rounded-lg font-medium text-xl tracking-[3px] text-[#333333] uppercase bg-white transition duration-500 absolute top-[35%] left-[20%] md:left-[10%] lg:left-[30%] hover:text-white hover:bg-[#ec1d25]  z-40 font-pop">drink</button>
+                </div>
+                <div class="group row-start-13 row-span-2 overflow-hidden rounded-lg relative mx-4 md:mx-0">
+                    <img src="img/grid/food.jpg" alt=""
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-105 z-10 ">
+                    <button
+                        class="w-44 h-14 opacity-90 rounded-lg font-medium text-xl tracking-[3px] text-[#333333] uppercase bg-white transition duration-500 absolute top-[35%] left-[20%] md:left-[5%] lg:left-[20%] hover:text-white hover:bg-[#ec1d25]  z-40 font-pop">starters</button>
+                </div>
+                <div class="group row-start-15 row-span-2 overflow-hidden rounded-lg relative mx-4 md:mx-0">
+                    <img src="img/grid/ice.jpg" alt=""
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-105 z-10 ">
+                    <button
+                        class="w-44 h-14 opacity-90 rounded-lg font-medium text-xl tracking-[3px] text-[#333333] uppercase bg-white transition duration-500 absolute top-[35%] left-[20%] md:left-[5%] lg:left-[20%] hover:text-white hover:bg-[#ec1d25]  z-40 font-pop">dessert</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="slider2" class="w-full h-[120vh] md:h-[100vh] bg-neutral-600 flex justify-center relative mt-28 md:mt-0 group">
+
+            <section class="w-full h-[20%] z-40 flex flex-col justify-center items-center">
+                <h3 class="text-[#d61c22] text-3xl font-cour">upcoming</h3>
+                <h2
+                    class=" text-white text-5xl font-bold uppercase tracking-[6px] [word-spacing:6px] pb-1 font-pop">
+                    events</h2>
+            </section>
+
+            <!-- slider -->
+            <section id="arrowRight2"
+                class="w-[50px] h-[50px] md:w-[70px] md:h-[70px] bg-[#010101a8] z-40 rounded-full absolute right-2 md:right-10 top-1/2 text-[#ffffff9e] flex justify-center items-center text-xl cursor-pointer opacity-0 transition duration-500 group-hover:opacity-100 hover:bg-[#5b1315]">
+                <i class="bi bi-chevron-right"></i></section>
+            <section id="arrowLeft2"
+                class="w-[50px] h-[50px] md:w-[70px] md:h-[70px] bg-[#010101a8] z-40 rounded-full absolute left-2 md:left-10 top-1/2 text-[#ffffff9e] flex justify-center items-center text-xl cursor-pointer opacity-0 transition duration-500 group-hover:opacity-100 hover:bg-[#5b1315]">
+                <i class="bi bi-chevron-left"></i></section>
+
+            <img src="img/Slider2/slider2-01.jpg" alt=""
+                class="w-full h-full object-cover absolute top-0 left-0 transition duration-700 z-30">
+            <img src="img/Slider2/slider2-02.jpg" alt=""
+                class="w-full h-full object-cover absolute top-0 left-0 transition duration-700 z-20">
+            <img src="img/Slider2/slider2-03.jpg" alt=""
+                class="w-full h-full object-cover absolute top-0 left-0 transition duration-700 z-10">
+
+            <div
+                class="w-[70%] h-[70%] md:w-[75%] md:h-[55%] bg-transparent absolute top-[20%] md:flex transition duration-700 rounded-xl md:mt-5 opacity-0 z-40">
+                <figure
+                    class="w-full md:w-1/2 h-1/2 md:h-full rounded-tl-lg rounded-tr-lg md:rounded-tr-none md:rounded-bg-lg relative after:absolute after:bottom-0 after:right-0 after:w-full after:flex after:justify-center after:items-center after:h-14 after:bg-[#cf2228] md:after:rounded-bl-xl after:opacity-90 after:content-['08:00_PM_Tuesday_-_21_November_2018'] after:text-white bg-[url('img/Slider2/pic/event-01.jpg')] bg-cover ">
+                </figure>
+                <div class="bg-white w-full md:w-1/2 h-1/2 md:h-full flex flex-col rounded-br-lg rounded-bl-lg md:rounded-bl-none  md:rounded-tr-lg">
+                    <h2
+                        class="w-full font-medium text-xl text-[#222222] uppercase tracking-[3px] mb-2.5 text-center mt-12 md:mt-24 font-pop">
+                        Wines during specific nights</h2>
+                    <p class="w-full font-normal text-sm text-[#666666] text-center px-4 md:px-10 font-mon">
+                        Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed
+                        imperdiet lacinia</p>
+                    <a class="group w-full text-center text-[#222222] uppercase font-normal tracking-[1px] hover:text-[#ec1d25] text-xs pl-2 mt-5 font-mon"
+                        href="">view details <i
+                            class="bi bi-arrow-right ml-2.5 text-[#222222] text-[12px] transition duration-500 group-hover:text-[#ec1d25] font-mon"></i></a>
+                </div>
+            </div>
+            <div
+                class="w-[70%] h-[70%] md:w-[75%] md:h-[55%] bg-transparent absolute top-[20%] md:flex transition duration-700 rounded-xl md:mt-5 opacity-0 z-30">
+                <figure
+                    class="w-full md:w-1/2 h-1/2 md:h-full rounded-tl-lg rounded-tr-lg md:rounded-tr-none md:rounded-bg-lg relative after:absolute after:bottom-0 after:right-0 after:w-full after:flex after:justify-center after:items-center after:h-14 after:bg-[#cf2228] md:after:rounded-bl-xl after:opacity-90 after:content-['08:00_PM_Tuesday_-_21_November_2018'] after:text-white bg-[url('img/Slider2/pic/event-02.jpg')] bg-cover ">
+                </figure>
+                <div class="bg-white w-full md:w-1/2 h-1/2 md:h-full flex flex-col rounded-br-lg rounded-bl-lg md:rounded-bl-none  md:rounded-tr-lg">
+                    <h2
+                        class="w-full font-medium text-xl text-[#222222] uppercase tracking-[3px] mb-2.5 text-center mt-12 md:mt-24 font-pop">
+                        Wines during specific nights</h2>
+                    <p class="w-full font-normal text-sm text-[#666666] text-center px-4 md:px-10 font-mon">
+                        Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed
+                        imperdiet lacinia</p>
+                    <a class="group w-full text-center text-[#222222] uppercase font-normal tracking-[1px] hover:text-[#ec1d25] text-xs pl-2 mt-5 font-mon"
+                        href="">view details <i
+                            class="bi bi-arrow-right ml-2.5 text-[#222222] text-[12px] transition duration-500 group-hover:text-[#ec1d25] font-mon"></i></a>
+                </div>
+            </div>
+            <div
+                class="w-[70%] h-[70%] md:w-[75%] md:h-[55%] bg-transparent absolute top-[20%] md:flex transition duration-700 rounded-xl md:mt-5 opacity-0 z-20">
+                <figure
+                    class="w-full md:w-1/2 h-1/2 md:h-full rounded-tl-lg rounded-tr-lg md:rounded-tr-none md:rounded-bg-lg relative after:absolute after:bottom-0 after:right-0 after:w-full after:flex after:justify-center after:items-center after:h-14 after:bg-[#cf2228] md:after:rounded-bl-xl after:opacity-90 after:content-['08:00_PM_Tuesday_-_21_November_2018'] after:text-white bg-[url('img/Slider2/pic/event-03.jpg')] bg-cover ">
+                </figure>
+                <div class="bg-white w-full md:w-1/2 h-1/2 md:h-full flex flex-col rounded-br-lg rounded-bl-lg md:rounded-bl-none  md:rounded-tr-lg">
+                    <h2
+                        class="w-full font-medium text-xl text-[#222222] uppercase tracking-[3px] mb-2.5 text-center mt-12 md:mt-24 font-pop">
+                        Wines during specific nights</h2>
+                    <p class="w-full font-normal text-sm text-[#666666] text-center px-4 md:px-10 font-mon">
+                        Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed
+                        imperdiet lacinia</p>
+                    <a class="group w-full text-center text-[#222222] uppercase font-normal tracking-[1px] hover:text-[#ec1d25] text-xs pl-2 mt-5 font-mon"
+                        href="">view details <i
+                            class="bi bi-arrow-right ml-2.5 text-[#222222] text-[12px] transition duration-500 group-hover:text-[#ec1d25] font-mon"></i></a>
+                </div>
+            </div>
+
+            <section id="button2" class="w-[30%] h-[10%] absolute bottom-5 z-40 flex justify-center items-center">
+                <div
+                    class="w-4 h-4 bg-[#ffffffab] rounded-full m-2 cursor-pointer transition duration-500 hover:bg-[#ec1d25] hover:border-4">
+                </div>
+                <div
+                    class="w-4 h-4 bg-[#ffffffab] rounded-full m-2 cursor-pointer transition duration-500 hover:bg-[#ec1d25] hover:border-4">
+                </div>
+                <div
+                    class="w-4 h-4 bg-[#ffffffab] rounded-full m-2 cursor-pointer transition duration-500 hover:bg-[#ec1d25] hover:border-4">
+                </div>
+            </section>
+            <!-- slider -->
+        </section>
+
+        <section class="w-full h-[230vh] md:h-[120vh] bg-white md:flex">
+            <div class="w-full h-1/2 md:w-1/2 md:h-full">
+                <div class="flex flex-col w-full h-[20%] justify-center items-center p-16 md:p-24">
+                    <h3 class="text-[#d61c22] text-3xl font-cour">Reservation</h3>
+                    <h2
+                        class="text-[#222222] text-5xl font-bold uppercase tracking-[10px] [word-spacing:8px] pb-5 font-pop text-center">
+                        BOOK TABLE</h2>
+                </div>
+                <div class="w-full h-[75%] md:h-[60%] lg:h-[50%] flex items-center justify-center">
+                    <form action="" class="w-full flex flex-col items-center md:w-[80%]">
+                        <label for=""
+                            class="w-full text-sm font-normal capitalize text-[#555555] pl-4 py-2 font-mon">Deta
+                            & Time</label>
+                        <input
+                            class="w-[95%] outline outline-1 outline-[#666666] text-[#666666] transition duration-150 focus:outline-[#ec1d25] rounded-lg pt-4 pb-4 pr-2 pl-2 "
+                            type="datetime-local">
+
+                        <label for=""
+                            class="w-full text-sm font-normal capitalize text-[#555555] pl-4 py-2 font-mon">People</label>
+                        <select
+                            class="w-[95%] outline outline-1 outline-[#666666] text-[#666666] transition duration-150 focus:outline-[#ec1d25] rounded-lg pt-4 pb-4 pr-2 pl-2">
+                            <option value="">1 Person</option>
+                            <option value="">2 Person</option>
+                            <option value="">3 Person</option>
+                            <option value="">4 Person</option>
+                            <option value="">5 Person</option>
+                            <option value="">6 Person</option>
+                            <option value="">7 Person</option>
+                            <option value="">8 Person</option>
+                            <option value="">9 Person</option>
+                            <option value="">10 Person</option>
+                            <option value="">11 Person</option>
+                            <option value="">12 Person</option>
+                        </select>
+
+                        <label for=""
+                            class="w-full text-sm font-normal capitalize text-[#555555] pl-4 py-2 font-mon">Name</label>
+                        <input
+                            class="w-[95%] outline outline-1 outline-[#666666] text-[#666666] transition duration-150 focus:outline-[#ec1d25] rounded-lg pt-4 pb-4 pr-2 pl-2"
+                            type="text" placeholder="Name">
+
+                        <label for=""
+                            class="w-full text-sm font-normal capitalize text-[#555555] pl-4 py-2 font-mon">Phone</label>
+                        <input
+                            class="w-[95%] outline outline-1 outline-[#666666] text-[#666666] transition duration-150 focus:outline-[#ec1d25] rounded-lg pt-4 pb-4 pr-2 pl-2"
+                            type="number" placeholder="Phone">
+
+                        <label for=""
+                            class="w-full text-sm font-normal capitalize text-[#555555] pl-4 py-2 font-mon">Email</label>
+                        <input
+                            class="w-[95%] outline outline-1 outline-[#666666] text-[#666666] transition duration-150 focus:outline-[#ec1d25] rounded-lg pt-4 pb-4 pr-2 pl-2"
+                            type="email" placeholder="Email">
+
+                        <button
+                            class="w-[30%] h-[10%] bg-black text-white pr-4 pl-4 pt-2 pb-2 m-3 rounded-lg transition duration-500 hover:bg-[#ec1d25] font-mon"><a
+                                href="" class="w-full h-full capitalize font-mon">Book table</a></button>
+                    </form>
+                </div>
+            </div>
+            <div class="w-full h-1/2 md:w-1/2 md:h-full flex justify-center items-start md:pt-[150px]">
+                <div class="w-[80%] h-[90%] md:w-[70%] lg:w-[50%] md:h-[80%] lg:h-[70%] overflow-hidden rounded-lg">
+                    <img src="img/small/story-02.jpg" alt=""
+                        class="w-full h-full object-cover transition duration-700 hover:scale-110 rounded-lg">
+                </div>
+            </div>
+        </section>
+
+        <section id="slider3" class="w-full h-[90%] relative flex justify-center group">
+            <section class="w-full h-[20%] z-40 flex flex-col justify-center items-center">
+                <h3 class="text-3xl text-[#d61c22] font-cour">Customers Say</h3>
+                <h2
+                    class="text-[#222222] text-5xl font-bold uppercase tracking-[10px] [word-spacing:8px] pb-5 font-pop">
+                    REVIEW</h2>
+            </section>
+            <!-- slider -->
+            <section id="arrowRight3"
+                class="w-[50px] h-[50px] md:w-[70px] md:h-[70px] bg-[#010101a8] z-40 rounded-full absolute right-2 md:right-10 top-1/2 text-[#ffffff9e] flex justify-center items-center text-xl cursor-pointer opacity-0 transition duration-500 group-hover:opacity-100 hover:bg-[#5b1315]">
+                <i class="bi bi-chevron-right"></i></section>
+            <section id="arrowLeft3"
+                class="w-[50px] h-[50px] md:w-[70px] md:h-[70px] bg-[#010101a8] z-40 rounded-full absolute left-2 md:left-10 top-1/2 text-[#ffffff9e] flex justify-center items-center text-xl cursor-pointer opacity-0 transition duration-500 group-hover:opacity-100 hover:bg-[#5b1315]">
+                <i class="bi bi-chevron-left"></i></section>
+
+            <div
+                class="w-[70%] h-[70%] md:w-[75%] md:h-[55%] bg-transparent absolute top-[20%] flex flex-wrap justify-center items-center transition duration-700 md:mt-5 z-40 opacity-0">
+                <figure class="w-28 h-28 rounded-full border-2 border-[#ec1d25] text-center">
+                    <img src="img/Slider3/avatar-01.jpg" alt="" class="w-full h-full object-cover rounded-full">
+                </figure>
+                <p class="w-full font-normal text-lg text-[#666666] text-center px-4 md:px-24 font-mon">“ We
+                    are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium
+                    nec, fermentum viverra dui ”</p>
+                <div class="w-full flex justify-center items-center">
+                    <i class="bi bi-star-fill text-[#ec1d25]"></i>
+                    <i class="bi bi-star-fill text-[#ec1d25]"></i>
+                    <i class="bi bi-star-fill text-[#ec1d25]"></i>
+                    <i class="bi bi-star-fill text-[#ec1d25]"></i>
+                    <i class="bi bi-star-fill text-[#ec1d25]"></i>
+                </div>
+                <p class="font-normal text-xs text-[#222222] uppercase tracking-[1px] font-mon">Marie Simmons
+                    ˗ New York</p>
+            </div>
+            <div
+                class="w-[70%] h-[70%] md:w-[75%] md:h-[55%] bg-transparent absolute top-[20%] flex flex-wrap justify-center items-center transition duration-700 md:mt-5 z-30 opacity-0">
+                <figure class="w-28 h-28 rounded-full border-2 border-[#ec1d25] text-center">
+                    <img src="img/Slider3/avatar-02.jpg" alt="" class="w-full h-full object-cover rounded-full">
+                </figure>
+                <p class="w-full font-normal text-lg text-[#666666] text-center px-4 md:px-24 font-mon">“ We
+                    are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium
+                    nec, fermentum viverra dui ”</p>
+                <div class="w-full flex justify-center items-center">
+                    <i class="bi bi-star-fill text-[#ec1d25]"></i>
+                    <i class="bi bi-star-fill text-[#ec1d25]"></i>
+                    <i class="bi bi-star-fill text-[#ec1d25]"></i>
+                    <i class="bi bi-star-fill text-[#ec1d25]"></i>
+                    <i class="bi bi-star-fill text-[#ec1d25]"></i>
+                </div>
+                <p class="font-normal text-xs text-[#222222] uppercase tracking-[1px] font-mon">Marie Simmons
+                    ˗ New York</p>
+            </div>
+            <div
+                class="w-[70%] h-[70%] md:w-[75%] md:h-[55%] bg-transparent absolute top-[20%] flex flex-wrap justify-center items-center transition duration-700 md:mt-5 z-20 opacity-0">
+                <figure class="w-28 h-28 rounded-full border-2 border-[#ec1d25] text-center">
+                    <img src="img/Slider3/avatar-03.jpg" alt="" class="w-full h-full object-cover rounded-full">
+                </figure>
+                <p class="w-full font-normal text-lg text-[#666666] text-center px-4 md:px-24 font-mon">“ We
+                    are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium
+                    nec, fermentum viverra dui ”</p>
+                <div class="w-full flex justify-center items-center">
+                    <i class="bi bi-star-fill text-[#ec1d25]"></i>
+                    <i class="bi bi-star-fill text-[#ec1d25]"></i>
+                    <i class="bi bi-star-fill text-[#ec1d25]"></i>
+                    <i class="bi bi-star-fill text-[#ec1d25]"></i>
+                    <i class="bi bi-star-fill text-[#ec1d25]"></i>
+                </div>
+                <p class="font-normal text-xs text-[#222222] uppercase tracking-[1px] font-mon">Marie Simmons
+                    ˗ New York</p>
+            </div>
+
+            <section id="button3" class="w-[30%] h-[10%] absolute bottom-5 z-40 flex justify-center items-center">
+                <div
+                    class="w-4 h-4 bg-[#888888ab] rounded-full m-2 cursor-pointer transition duration-500 hover:bg-[#ec1d25] hover:border-4">
+                </div>
+                <div
+                    class="w-4 h-4 bg-[#888888ab] rounded-full m-2 cursor-pointer transition duration-500 hover:bg-[#ec1d25] hover:border-4">
+                </div>
+                <div
+                    class="w-4 h-4 bg-[#888888ab] rounded-full m-2 cursor-pointer transition duration-500 hover:bg-[#ec1d25] hover:border-4">
+                </div>
+            </section>
+            <!-- slider -->
+        </section>
+
+        <section
+            class="w-full h-[90vh] bg-[url('img/bg-700vh.jpg')] bg-fixed bg-top flex flex-col justify-center items-center relative z-40 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-[#00000071] after:z-30">
+            <h3 class="text-3xl text-[#d61c22] z-40 font-cour">Discover</h3>
+            <h2
+                class="text-white text-5xl font-bold uppercase tracking-[6px] [word-spacing:6px] pb-1 z-40 font-pop">
+                OUR VIDEO</h2>
+            <div
+                class="group w-[80px] h-[80px] rounded-full bg-white hover:bg-[#5b1315] z-40 flex justify-center items-center transition duration-500 hover:scale-110 hover:opacity-90">
+                <a href="" class="w-full h-full flex justify-center items-center"><i
+                        class="bi bi-caret-right-fill transition duration-500 group-hover:text-white text-xl"></i></a>
+            </div>
+        </section>
+
+        <section class="w-full h-auto md:h-[80%] flex flex-wrap md:flex-nowrap md:justify-center">
+            <div
+                class="w-full h-1/3 md:w-[28%] md:h-full flex flex-col items-center pt-16 pl-1 pr-1 pb-4 overflow-hidden">
+                <div class="w-[95%] h-[50%] rounded-lg overflow-hidden relative">
+                    <img src="img/3second/01-01.jpg" alt=""
+                        class="w-full h-full object-cover rounded-lg hover:scale-105 cursor-pointer transition duration-500 z-20">
+                    <div
+                        class="absolute bottom-3 left-3.5 bg-[#00000080] py-1 px-3.5 font-normal text-xs text-white rounded z-40 font-mon">
+                        21 Dec 2017</div>
+                </div>
+                <h2
+                    class="w-full text-[#333333] text-start font-medium text-2xl uppercase tracking-[3px] hover:text-[#ec1d25] mb-3.5 pt-4 pl-3 font-pop">
+                    <a href="" class="font-pop">best places for wine</a></h2>
+                <p class="w-full text-start font-normal text-base text-[#666666] mb-5 pl-3 font-mon">
+                    Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+                <a class="group w-full text-start text-[#222222] uppercase font-normal tracking-[1px] hover:text-[#ec1d25] text-xs pl-3 font-mon"
+                    href="">continue reading <i
+                        class="bi bi-arrow-right ml-2.5 text-[#222222] text-[12px] group-hover:text-[#ec1d25] font-mon"></i></a>
+            </div>
+            <div class="w-full h-1/3 md:w-[28%] md:h-full flex flex-col items-center pt-16 pl-1 pr-1 pb-4">
+                <div class="w-[95%] h-[50%] rounded-lg overflow-hidden relative">
+                    <img src="img/3second/02-02.jpg" alt=""
+                        class="w-full h-full object-cover rounded-lg hover:scale-105 cursor-pointer transition duration-500 z-20">
+                    <div
+                        class="absolute bottom-3 left-3.5 bg-[#00000080] py-1 px-3.5 font-normal text-xs text-white rounded z-40 font-mon">
+                        15 Dec 2017</div>
+                </div>
+                <h2
+                    class="w-full text-[#333333] text-start font-medium text-2xl uppercase tracking-[3px] hover:text-[#ec1d25] mb-3.5 pt-4 pl-3 font-pop">
+                    <a href="" class="font-pop">eggs and cheese</a></h2>
+                <p class="w-full text-start font-normal text-base text-[#666666] mb-5 pl-3 font-mon">Duis
+                    elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat</p>
+                <a class="group w-full text-start text-[#222222] uppercase font-normal tracking-[1px] hover:text-[#ec1d25] text-xs pl-3 font-mon"
+                    href="">continue reading <i
+                        class="bi bi-arrow-right ml-2.5 text-[#222222] text-[12px] group-hover:text-[#ec1d25] font-mon"></i></a>
+            </div>
+            <div class="w-full h-1/3 md:w-[28%] md:h-full flex flex-col items-center pt-16 pl-1 pr-1 pb-4">
+                <div class="w-[95%] h-[50%] rounded-lg overflow-hidden relative">
+                    <img src="img/3second/03-03.jpg" alt=""
+                        class="w-full h-full object-cover rounded-lg hover:scale-105 cursor-pointer transition duration-500 z-20">
+                    <div
+                        class="absolute bottom-3 left-3.5 bg-[#00000080] py-1 px-3.5 font-normal text-xs text-white rounded z-40 font-mon">
+                        21 Dec 2017</div>
+                </div>
+                <h2
+                    class="w-full text-[#333333] text-start font-medium text-2xl uppercase tracking-[3px] hover:text-[#ec1d25] mb-3.5 pt-4 pl-3 font-pop">
+                    <a href="" class="font-pop">style wedding party</a></h2>
+                <p class="w-full text-start font-normal text-base text-[#666666] mb-5 pl-3 font-mon">Sed
+                    ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+                <a class="group w-full text-start text-[#222222] uppercase font-normal tracking-[1px] hover:text-[#ec1d25] text-xs pl-3 font-mon"
+                    href="">continue reading <i
+                        class="bi bi-arrow-right ml-2.5 text-[#222222] text-[12px] group-hover:text-[#ec1d25] font-mon"></i></a>
+            </div>
+        </section>
+
+        <section
+            class="w-full h-[40vh] md:h-[30vh] flex justify-center items-center bg-[url('img/back.png')] bg-cover flex-wrap md:flex-nowrap">
+            <h2
+                class="font-medium text-xl text-[#333333] uppercase tracking-[3px] text-center mt-10 md:mt-0 font-pop">
+                SPECIALS SIGN UP</h2>
+            <div
+                class="border-2 border-[#d9d9d9] rounded-xl w-full md:w-72 h-12 m-10 bg-white font-normal text-sm relative flex font-mon">
+                <input type="email" placeholder="Email Address"
+                    class="w-full h-full text-left rounded-xl font-normal text-sm text-[#666666] outline-none border-none touch-manipulation pl-2 font-mon">
+                <i class="bi bi-envelope-fill flex justify-center items-center pr-2 text-[#666666]"></i>
+            </div>
+            <button
+                class="bg-black text-white transition duration-500 hover:bg-[#ec1d25] cursor-pointer rounded-xl w-40 h-10 font-normal text-xs uppercase tracking-[1px] font-mon"><a
+                    href="">sing-up</a></button>
+        </section>
+
+        <section class="w-full h-[200vh] md:h-[70vh] bg-[#212529] flex flex-col md:flex-row pl-5">
+            <div class="w-full h-1/3 md:w-1/3 md:h-full text-start pb-4">
+                <h2 class="text-lg font-medium text-white uppercase tracking-[2px] p-8 w-full font-pop">CONTACT
+                    US</h2>
+                <div class="w-full flex flex-nowrap text-center">
+                    <i class="bi bi-geo-alt-fill text-lg text-[#999999] pl-8 pt-2.5"></i>
+                    <p class="font-normal text-xs text-[#999999] p-3 font-mon">8th floor, 379 Hudson St, New
+                        York, NY 10018</p>
+                </div>
+                <div class="w-full flex flex-nowrap text-center pb-4">
+                    <i class="bi bi-telephone-fill text-lg text-[#999999] pl-8 pt-2.5"></i>
+                    <p class="font-normal text-xs text-[#999999] p-3 font-mon"> (+1) 96 716 6879</p>
+                </div>
+                <div class="w-full flex flex-nowrap text-center pb-4">
+                    <i class="bi bi-envelope-fill text-lg text-[#999999] pl-8 pt-2.5"></i>
+                    <p class="font-normal text-xs text-[#999999] p-3 font-mon">contact@site.com</p>
+                </div>
+                <h2
+                    class="text-lg text-white uppercase tracking-[2px] pl-8 w-full text-start font-bold font-pop">
+                    OPENING TIMES</h2>
+                <p class="font-medium text-xs text-[#999999] pt-3 pl-8 text-start font-pop">09:30 AM – 11:00 PM
+                </p>
+                <p class="font-medium text-xs text-[#999999] pl-8 capitalize text-start font-pop">Every Day</p>
+            </div>
+            <div class="w-full h-1/3 md:w-1/3 md:h-full">
+                <h2 class="text-lg font-medium text-white uppercase tracking-[2px] p-8 w-full font-pop">LATEST
+                    TWITTER</h2>
+                <div class="w-full">
+                    <div class="w-full flex">
+                        <i class="bi bi-twitter text-white mr-1 text-sm pl-8 cursor-pointer "></i>
+                        <a href="https://preview.colorlib.com/theme/pato/#"
+                            class="text-[#ec1d25] font-normal text-sm font-mon">@colorlib</a>
+                    </div>
+                    <p class="font-normal text-xs text-[#999999] pl-8 pt-2 font-mon">Activello is a good
+                        option. It has a slider built into that displays the featured image in the slider.</p>
+                    <a href="https://preview.colorlib.com/theme/pato/#"
+                        class="text-[#ec1d25] font-normal text-sm pl-8 font-mon">https://buff.ly/2zaSfAQ</a>
+                    <div class="pl-8 font-normal text-xs text-[#555555] pt-4 pb-6 font-mon">
+                        15 Dec 2017</div>
+
+                    <div class="w-full flex">
+                        <i class="bi bi-twitter text-white mr-1 text-sm pl-8 cursor-pointer "></i>
+                        <a href="https://preview.colorlib.com/theme/pato/#"
+                            class="text-[#ec1d25] font-normal text-sm font-mon">@colorlib</a>
+                    </div>
+                    <p class="font-normal text-xs text-[#999999] pl-8 pt-2 font-mon">Activello is a good
+                        option. It has a slider built into that displays</p>
+                    <a href="https://preview.colorlib.com/theme/pato/#"
+                        class="text-[#ec1d25] font-normal text-sm pl-8 font-mon">https://buff.ly/2zaSfAQ</a>
+                    <div class="pl-8 font-normal text-xs text-[#555555] pt-4 font-mon">
+                        15 Dec 2017</div>
+                </div>
+            </div>
+            <div class="w-full h-1/3 md:w-1/3 md:h-full">
+                <h2 class="text-lg font-medium text-white uppercase tracking-[2px] p-8 w-full font-pop">GALLERY
+                </h2>
+                <div class="grid grid-cols-4 grid-rows-3 gap-2 w-[80%] mb-4 pl-8">
+                    <div
+                        class="relative z-40 after:transition after:duration-500 after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#ec1d25b3] after:z-30 cursor-pointer">
+                        <img src="img/footer/photo-gallery-01.jpg" alt="" class="object-cover">
+                    </div>
+                    <div
+                        class="relative z-40 after:transition after:duration-500 after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#ec1d25b3] after:z-30 cursor-pointer">
+                        <img src="img/footer/photo-gallery-02.jpg" alt="" class="object-cover">
+                    </div>
+                    <div
+                        class="relative z-40 after:transition after:duration-500 after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#ec1d25b3] after:z-30 cursor-pointer">
+                        <img src="img/footer/photo-gallery-03.jpg" alt="" class="object-cover">
+                    </div>
+                    <div
+                        class="relative z-40 after:transition after:duration-500 after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#ec1d25b3] after:z-30 cursor-pointer">
+                        <img src="img/footer/photo-gallery-04.jpg" alt="" class="object-cover">
+                    </div>
+                    <div
+                        class="relative z-40 after:transition after:duration-500 after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#ec1d25b3] after:z-30 cursor-pointer">
+                        <img src="img/footer/photo-gallery-05.jpg" alt="" class="object-cover">
+                    </div>
+                    <div
+                        class="relative z-40 after:transition after:duration-500 after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#ec1d25b3] after:z-30 cursor-pointer">
+                        <img src="img/footer/photo-gallery-06.jpg" alt="" class="object-cover">
+                    </div>
+                    <div
+                        class="relative z-40 after:transition after:duration-500 after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#ec1d25b3] after:z-30 cursor-pointer">
+                        <img src="img/footer/photo-gallery-07.jpg" alt="" class="object-cover">
+                    </div>
+                    <div
+                        class="relative z-40 after:transition after:duration-500 after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#ec1d25b3] after:z-30 cursor-pointer">
+                        <img src="img/footer/photo-gallery-08.jpg" alt="" class="object-cover">
+                    </div>
+                    <div
+                        class="relative z-40 after:transition after:duration-500 after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#ec1d25b3] after:z-30 cursor-pointer">
+                        <img src="img/footer/photo-gallery-09.jpg" alt="" class="object-cover">
+                    </div>
+                    <div
+                        class="relative z-40 after:transition after:duration-500 after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#ec1d25b3] after:z-30 cursor-pointer">
+                        <img src="img/footer/photo-gallery-10.jpg" alt="" class="object-cover">
+                    </div>
+                    <div
+                        class="relative z-40 after:transition after:duration-500 after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#ec1d25b3] after:z-30 cursor-pointer">
+                        <img src="img/footer/photo-gallery-11.jpg" alt="" class="object-cover">
+                    </div>
+                    <div
+                        class="relative z-40 after:transition after:duration-500 after:absolute after:top-0 after:left-0 after:w-full after:h-full hover:after:bg-[#ec1d25b3] after:z-30 cursor-pointer">
+                        <img src="img/footer/photo-gallery-12.jpg" alt="" class="object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full h-[10vh] bg-black flex justify-center items-center">
+            <h2 class="text-white text-xl">Coded By <a href="https://github.com/Melika-haqshenas-web"
+                    class="transition duration-500 hover:text-[#ec1d25b3]">Melika Haqshenas</a></h2>
+
+        </section>
+
+
+    </main>
+
+</body>
+
+<script src="js/master.js"></script>
+
+</html>

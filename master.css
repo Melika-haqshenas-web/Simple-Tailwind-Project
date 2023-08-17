@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../font/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: Courgette;
+    src: url('../font/Courgette/Courgette-Regular.ttf');
+    
+     /* src: url('font/Courgette/Courgette-Regular.ttf'); */
+    src: url('../font/Courgette/Courgette-Regular.ttf');
+     font-display: swap;
+    }
+@font-face {
+    font-family: Poppins;
+    src: url('../font/Poppins/Poppins-Medium.ttf');
+    
+
+}
+/* Add font face */
