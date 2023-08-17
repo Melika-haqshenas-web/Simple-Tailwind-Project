@@ -1,6 +1,6 @@
 # Restaurant WebSite with Tailwind
 
-🫄**I don't recommend viewing this page for gutty people.❌ An attractive Tailwind site with attractive food suggestions.**
+🤰🫃**I don't recommend viewing this page for gutty people.❌ An attractive Tailwind site with attractive food suggestions.**
 
 ![1](https://github.com/Melika-haqshenas-web/Simple-Tailwind-Project/assets/126666369/a0f767ea-b715-4d6c-99c7-8955bb6f9407)
 
